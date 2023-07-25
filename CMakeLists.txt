@@ -33,3 +33,11 @@ add_custom_command(
         ${CMAKE_CURRENT_SOURCE_DIR}/bin/${PLATFORM_NAME}${PROCESSOR_ARCH}
         ${CMAKE_CURRENT_BINARY_DIR}
 )
+
+add_custom_command(
+        TARGET app
+        PRE_BUILD
+        COMMAND ${CMAKE_COMMAND} -E copy_directory
+        ${CMAKE_CURRENT_SOURCE_DIR}/actions
+        ${CMAKE_CURRENT_BINARY_DIR}
+)
