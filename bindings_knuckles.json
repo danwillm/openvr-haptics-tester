@@ -1,0 +1,24 @@
+{
+  "action_manifest_version" : 0,
+  "alias_info" : {},
+  "bindings" : {
+    "/actions/default": {
+      "haptics": [
+        {
+          "output": "/actions/default/in/HapticVibration",
+          "path": "/user/hand/left/output/haptic"
+        },
+        {
+          "output": "/actions/default/in/HapticVibration",
+          "path": "/user/hand/right/output/haptic"
+        }
+      ]
+    }
+  },
+  "category" : "steamvr_input",
+  "controller_type" : "knuckles",
+  "description" : "Default two handed bindings with movement on the off hand",
+  "name" : "Dual Controllers (Movement on Off Hand)",
+  "options" : {},
+  "simulated_actions" : []
+}

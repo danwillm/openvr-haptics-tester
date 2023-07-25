@@ -1,0 +1,31 @@
+{
+  "default_bindings": [
+    {
+      "binding_url" : "bindings_knuckles.json",
+      "controller_type" : "knuckles"
+    }
+  ],
+  "action_sets": [
+    {
+      "name" : "/actions/default",
+      "usage" : "leftright"
+    }
+  ],
+  "actions": [
+    {
+      "name": "/actions/default/in/temp",
+      "type": "boolean"
+    },
+    {
+      "name" : "/actions/default/in/HapticVibration",
+      "type" : "vibration"
+    }
+  ],
+  "localization": [
+    {
+      "language_tag": "en_US",
+      "/actions/default/in/temp": "because openvr needs something",
+      "/actions/default/in/HapticVibration": "Haptic Feedback"
+    }
+  ]
+}
